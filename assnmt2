@@ -85,6 +85,25 @@ for i in range(0,100):
     if flag == True:
         print(R[i])
         prime_count += 1
+
+
+#Q4
+a = {32,56,78,90} 
+b = {78,45,90,23}
+
+print(a.union(b))
+print(a.intersection(b))
+print(a.symmetric_difference(b))
+print(a.issubset(b))
+print(b.issubset(a))
+
+x = int(input("Enter number to delete"))
+if x in A:
+    A.remove(x)
+    print("Deleted")
+else:
+    print("Not found")
+
     
 
 print('prime numbers: ',prime_count)
