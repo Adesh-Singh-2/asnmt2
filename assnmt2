@@ -108,3 +108,13 @@ else:
 
 print('prime numbers: ',prime_count)
 
+#Q5
+sample_dict={
+    "name":"Adesh",
+    "age":20,
+    "salary":80000,
+    "city":"New York"
+}
+city_value = sample_dict.pop("city")
+sample_dict["location"]=city_value
+print(sample_dict)
