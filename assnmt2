@@ -1,3 +1,4 @@
+#Q1
 The_list = [10,20,30,40,50,60,70,80]
 print(The_list)
 The_list.append(200)
@@ -19,7 +20,7 @@ The_list.reverse()
 print(The_list)
 
 
-
+Q2
 
 T= (45,89.5,76,45.4,89,92,58,45)
 print(max(T))
@@ -46,3 +47,45 @@ for i in range(0,8):
 if (f==0):
     print('its not in the tuple/list')
         
+
+
+
+
+#Q3
+import random
+R=random.sample(range(100,900),100)
+print(random_int)
+print('even numbers: \n')
+even_count=0
+for i in range(0,100):
+    if (R[i]%2==0):
+        print(R[i])
+        even_count= even_count+1
+print('even numbers: ',even_count)
+odd_count= 0
+print('odd numbers: \n')
+for i in range(0,100):
+    if(R[i]%2!=0):
+        print(R[i])
+        odd_count=odd_count+1
+
+print('odd numbers: ',odd_count)
+
+prime_count= 0
+print('prime numbers: \n')
+
+for i in range(0,100):
+    flag=True
+
+    
+    for j in range(2,R[i]//2+1):
+           if (R[i]%j==0):
+               flag= False
+               break
+    if flag == True:
+        print(R[i])
+        prime_count += 1
+    
+
+print('prime numbers: ',prime_count)
+
